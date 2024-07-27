@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NES</title>
+    <!-- 网页的样式 -->
+    <link rel="stylesheet" href="main/main.css" />
+    <!-- 收藏夹图标 -->
+    <link rel="shortcut icon" href="/main/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- 创建画布用于显示游戏画面 -->
+    <canvas id="canvas" width="256" height="240"> </canvas>
+    <div id="container">
+      <h2>生而无畏，战至终章！</h2>
+      <ul id="directory"></ul>
+    </div>
+    <div id="controller">
+      <div id="circle"></div>
+      <button id="rocker"></button>
+      <button id="buttonB">B</button>
+      <button id="buttonA">A</button>
+      <button id="buttonSelect">Select</button>
+      <button id="buttonStart">Start</button>
+      <button id="fullScreen">Full Screen</button>
+    </div>
+    <!-- 导入jsnes包 -->
+    <script src="main/jsnes.min.js"></script>
+    <!-- 导入游戏目录 -->
+    <script src="directory.js"></script>
+    <!-- 配置键位等信息 -->
+    <script src="main/main.js"></script>
+  </body>
+</html>

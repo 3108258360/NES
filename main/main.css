@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#container {
+  height: 100%;
+  width: 90%;
+  text-align: center;
+}
+h2 {
+  margin: 16px 0;
+}
+p {
+  margin: 10px 0;
+  font-size: 18px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+li {
+  color: red;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+#canvas {
+  display: none;
+}
+#circle {
+  position: fixed;
+  z-index: 10;
+  bottom: 55px;
+  left: 55px;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  border: 2px solid #999;
+  background-color: #ddd;
+}
+#controller {
+  display: none;
+}
+#rocker {
+  position: fixed;
+  z-index: 10;
+  bottom: 80px;
+  left: 80px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 5px solid rgb(135, 223, 235);
+}
+#buttonA,
+#buttonB {
+  user-select: none;
+  line-height: 50px;
+  font-size: 20px;
+  position: fixed;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  bottom: 80px;
+  color: rgba(137, 43, 226, 0.692);
+}
+#buttonA {
+  right: 80px;
+  background-color: rgba(89, 255, 47, 0.664);
+}
+#buttonB {
+  right: 160px;
+  background-color: rgba(255, 0, 0, 0.664);
+}
+#buttonSelect,
+#buttonStart {
+  user-select: none;
+  position: fixed;
+  z-index: 10;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: chartreuse;
+  top: 45px;
+}
+#buttonSelect {
+  left: 50px;
+  background-color: rgba(255, 255, 0, 0.664);
+}
+#buttonStart {
+  left: 120px;
+  background-color: rgba(0, 0, 255, 0.664);
+}
+#fullScreen {
+  user-select: none;
+  position: fixed;
+  top: 40px;
+  right: 100px;
+  z-index: 10;
+  padding: 5px 10px;
+}
